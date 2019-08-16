@@ -166,7 +166,6 @@ System.register(["angular", "lodash", "./utils", "./xmlparser"], function (_expo
             url: this.url + "/getstatus.htm?id=0&username=" + username + "&passhash=" + passhash
           };
           return this.backendSrv.datasourceRequest(options).then(function (response) {
-            _this.passhash = response;
             return response;
           });
         }

@@ -218,7 +218,6 @@ function PRTGAPIService(alertSrv, backendSrv) {
           passhash
       };
       return this.backendSrv.datasourceRequest(options).then(response => {
-        this.passhash = response;
         return response;
       });
     }
